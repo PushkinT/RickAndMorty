@@ -56,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334E443B2BE2A27C000C27F9 /* RealmSwift in Frameworks */,
+				334E44342BE2A1C0000C27F9 /* Nuke in Frameworks */,
+				334E44362BE2A1C0000C27F9 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +84,14 @@
 		334E43E82BE12853000C27F9 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				334E44262BE283DA000C27F9 /* Views */,
 				334E43E92BE12853000C27F9 /* RickAndMortyApp.swift */,
-				334E43EB2BE12853000C27F9 /* ContentView.swift */,
 				334E43ED2BE12854000C27F9 /* Assets.xcassets */,
+				334E44102BE132A5000C27F9 /* Models */,
+				334E441B2BE134B5000C27F9 /* Network */,
 				334E43EF2BE12854000C27F9 /* Preview Content */,
+				334E44212BE13A99000C27F9 /* ViewModel */,
+				33C7C3012BE3BD6D005B1A9C /* Notes.md */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -97,6 +104,41 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		334E44102BE132A5000C27F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				334E440D2BE132A5000C27F9 /* RaMCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		334E441B2BE134B5000C27F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				334E441C2BE134C8000C27F9 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		334E44212BE13A99000C27F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				334E44242BE28384000C27F9 /* CharacterDetailViewModel.swift */,
+				334E44222BE13AB3000C27F9 /* CharactersListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		334E44262BE283DA000C27F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				334E441E2BE13A8A000C27F9 /* CharactersList.swift */,
+				334E44272BE28400000C27F9 /* CharacterDetailview.swift */,
+				33C7C2FF2BE39685005B1A9C /* ListItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,12 +149,18 @@
 				334E43E22BE12853000C27F9 /* Sources */,
 				334E43E32BE12853000C27F9 /* Frameworks */,
 				334E43E42BE12853000C27F9 /* Resources */,
+				334E44302BE29E6C000C27F9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+				334E44332BE2A1C0000C27F9 /* Nuke */,
+				334E44352BE2A1C0000C27F9 /* NukeUI */,
+				334E443A2BE2A27C000C27F9 /* RealmSwift */,
+			);
 			productName = RickAndMorty;
 			productReference = 334E43E62BE12853000C27F9 /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +189,10 @@
 				Base,
 			);
 			mainGroup = 334E43DD2BE12853000C27F9;
+			packageReferences = (
+				334E44322BE2A1C0000C27F9 /* XCRemoteSwiftPackageReference "Nuke" */,
+				334E44372BE2A27C000C27F9 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 334E43E72BE12853000C27F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +209,7 @@
 			files = (
 				334E43F12BE12854000C27F9 /* Preview Assets.xcassets in Resources */,
 				334E43EE2BE12854000C27F9 /* Assets.xcassets in Resources */,
+				33C7C3022BE3BD6D005B1A9C /* Notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334E43EC2BE12853000C27F9 /* ContentView.swift in Sources */,
+				334E44232BE13AB3000C27F9 /* CharactersListViewModel.swift in Sources */,
+				334E44282BE28400000C27F9 /* CharacterDetailview.swift in Sources */,
+				334E441F2BE13A8A000C27F9 /* CharactersList.swift in Sources */,
+				33C7C3002BE39685005B1A9C /* ListItemView.swift in Sources */,
 				334E43EA2BE12853000C27F9 /* RickAndMortyApp.swift in Sources */,
+				334E44252BE28384000C27F9 /* CharacterDetailViewModel.swift in Sources */,
+				334E44112BE132A5000C27F9 /* RaMCharacter.swift in Sources */,
+				334E441D2BE134C8000C27F9 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -284,7 +343,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -374,6 +433,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		334E44322BE2A1C0000C27F9 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+		334E44372BE2A27C000C27F9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.49.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		334E44332BE2A1C0000C27F9 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 334E44322BE2A1C0000C27F9 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		334E44352BE2A1C0000C27F9 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 334E44322BE2A1C0000C27F9 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		334E443A2BE2A27C000C27F9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 334E44372BE2A27C000C27F9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 334E43DE2BE12853000C27F9 /* Project object */;
 }
