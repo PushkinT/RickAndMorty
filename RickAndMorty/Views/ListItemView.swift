@@ -13,7 +13,7 @@ struct ListItemView: View {
     
     var body: some View {
         NavigationLink {
-            CharacterDetailview(character: character)
+            CharacterDetailView(character: character)
         } label: {
             HStack {
                 VStack {
@@ -43,31 +43,4 @@ struct ListItemView: View {
             }
         }
     }
-}
-
-class Coordinator: ObservableObject {
-    
-    //    enum NavigationTranisitionStyle {
-    //        case push
-    //        case presentModally
-    //        case presentFullscreen
-    //    }
-    
-    enum Destinations {
-        case toCaracterDetailView(caracter: RaMCharacter)
-        
-        @ViewBuilder
-        public func view() -> some View {
-            switch self {
-            case .toCaracterDetailView(caracter: let character):
-                CharacterDetailview(character: character)
-            }
-        }
-        
-        private func goToCaracterDetailView(character: RaMCharacter) {
-            
-        }
-    }
-    
-
 }

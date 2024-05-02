@@ -14,8 +14,7 @@
 		334E441D2BE134C8000C27F9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E441C2BE134C8000C27F9 /* NetworkService.swift */; };
 		334E441F2BE13A8A000C27F9 /* CharactersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E441E2BE13A8A000C27F9 /* CharactersList.swift */; };
 		334E44232BE13AB3000C27F9 /* CharactersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E44222BE13AB3000C27F9 /* CharactersListViewModel.swift */; };
-		334E44252BE28384000C27F9 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E44242BE28384000C27F9 /* CharacterDetailViewModel.swift */; };
-		334E44282BE28400000C27F9 /* CharacterDetailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E44272BE28400000C27F9 /* CharacterDetailview.swift */; };
+		334E44282BE28400000C27F9 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334E44272BE28400000C27F9 /* CharacterDetailView.swift */; };
 		334E44342BE2A1C0000C27F9 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 334E44332BE2A1C0000C27F9 /* Nuke */; };
 		334E44362BE2A1C0000C27F9 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 334E44352BE2A1C0000C27F9 /* NukeUI */; };
 		334E443B2BE2A27C000C27F9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 334E443A2BE2A27C000C27F9 /* RealmSwift */; };
@@ -45,8 +44,7 @@
 		334E441C2BE134C8000C27F9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		334E441E2BE13A8A000C27F9 /* CharactersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersList.swift; sourceTree = "<group>"; };
 		334E44222BE13AB3000C27F9 /* CharactersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewModel.swift; sourceTree = "<group>"; };
-		334E44242BE28384000C27F9 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
-		334E44272BE28400000C27F9 /* CharacterDetailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailview.swift; sourceTree = "<group>"; };
+		334E44272BE28400000C27F9 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		33C7C2FF2BE39685005B1A9C /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		33C7C3012BE3BD6D005B1A9C /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,7 +121,6 @@
 		334E44212BE13A99000C27F9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				334E44242BE28384000C27F9 /* CharacterDetailViewModel.swift */,
 				334E44222BE13AB3000C27F9 /* CharactersListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -133,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				334E441E2BE13A8A000C27F9 /* CharactersList.swift */,
-				334E44272BE28400000C27F9 /* CharacterDetailview.swift */,
+				334E44272BE28400000C27F9 /* CharacterDetailView.swift */,
 				33C7C2FF2BE39685005B1A9C /* ListItemView.swift */,
 			);
 			path = Views;
@@ -221,11 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				334E44232BE13AB3000C27F9 /* CharactersListViewModel.swift in Sources */,
-				334E44282BE28400000C27F9 /* CharacterDetailview.swift in Sources */,
+				334E44282BE28400000C27F9 /* CharacterDetailView.swift in Sources */,
 				334E441F2BE13A8A000C27F9 /* CharactersList.swift in Sources */,
 				33C7C3002BE39685005B1A9C /* ListItemView.swift in Sources */,
 				334E43EA2BE12853000C27F9 /* RickAndMortyApp.swift in Sources */,
-				334E44252BE28384000C27F9 /* CharacterDetailViewModel.swift in Sources */,
 				334E44112BE132A5000C27F9 /* RaMCharacter.swift in Sources */,
 				334E441D2BE134C8000C27F9 /* NetworkService.swift in Sources */,
 			);
